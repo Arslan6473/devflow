@@ -1,0 +1,85 @@
+---
+title: "Getting Started"
+description: "Everything you need to know to start using DevFlow — navigation, keyboard shortcuts, and tips for each tool."
+date: "2025-01-10"
+order: 1
+tags: ["getting-started"]
+---
+
+# Getting Started with DevFlow
+
+DevFlow is a browser-based suite of developer tools. This guide covers navigation, the command palette, and a quick overview of each tool.
+
+## Opening a Tool
+
+From the homepage, click any tool card to open it. You can also:
+
+- Go to **[/tools](/tools)** to see all available tools in a grid
+- Use the command palette (**⌘K** or **Ctrl+K**) to search by name and jump directly to a tool
+- Type **/** anywhere outside a text input to jump to the search field
+
+## The Command Palette
+
+Press **⌘K** (Mac) or **Ctrl+K** (Windows/Linux) from any page to open the command palette. Start typing the name of a tool or action to filter results. Press **Enter** to navigate, or use **↑↓** arrow keys to move through results.
+
+The command palette supports:
+- Jumping to any tool by name
+- Switching between light and dark mode
+- Navigating to Docs, Blog, About, and other pages
+
+## Tool Overview
+
+### JSON Formatter
+
+**URL:** `/tools/json-formatter`
+
+Paste minified or raw JSON into the input panel. The formatter validates and pretty-prints the JSON in real-time. Validation errors are shown inline.
+
+**Tips:**
+- Paste JSON from curl, Postman, or logs and format it instantly
+- Use the copy button to grab the formatted output
+
+### JWT Decoder
+
+**URL:** `/tools/jwt-decoder`
+
+Paste a JWT (JSON Web Token) in the `xxxxx.yyyyy.zzzzz` format. DevFlow splits it into Header, Payload, and Signature sections and displays each as formatted JSON.
+
+**Tips:**
+- The signature is displayed for reference only; cryptographic verification is not performed
+- Expiry time (`exp`) and issued-at (`iat`) claims are shown as human-readable dates
+
+### Base64 Encoder / Decoder
+
+**URL:** `/tools/base64`
+
+Toggle between encode and decode mode using the tabs. Paste text to encode it to Base64, or paste a Base64 string to decode it back.
+
+**Tips:**
+- Handles both standard Base64 and URL-safe Base64
+- Works on any UTF-8 text
+
+### URL Encoder / Decoder
+
+**URL:** `/tools/url-encoder`
+
+Encode a string for safe use in a URL query parameter, or decode a percent-encoded string back to readable text.
+
+**Tips:**
+- Uses `encodeURIComponent` semantics by default (encodes all special characters)
+- Useful for building query strings or debugging URL issues
+
+### Regex Tester
+
+**URL:** `/tools/regex-tester`
+
+Write a regular expression and test it against a string. Matches are highlighted in real-time.
+
+**Tips:**
+- Supports standard JavaScript regex flags: `g` (global), `i` (ignore case), `m` (multiline), `s` (dotAll)
+- Match groups are listed below the input
+
+## Next Steps
+
+- Read [Keyboard Shortcuts](/docs/keyboard-shortcuts) for a full shortcut reference
+- Read [Privacy and Security](/docs/privacy-and-security) to understand how your data is handled

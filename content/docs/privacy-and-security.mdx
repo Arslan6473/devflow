@@ -1,0 +1,83 @@
+---
+title: "Privacy and Security"
+description: "DevFlow processes everything client-side in your browser. No data is transmitted to servers, stored, or logged. Here's exactly how it works."
+date: "2025-01-10"
+order: 3
+tags: ["privacy", "security", "client-side"]
+---
+
+# Privacy and Security
+
+DevFlow is built on a single, non-negotiable principle: **your data never leaves your device**.
+
+## How It Works
+
+Every DevFlow tool runs as JavaScript in your browser. When you paste a JWT, a JSON payload, or any other data into a DevFlow tool:
+
+1. Your browser receives the input
+2. The tool logic (JavaScript) processes it locally
+3. The result is displayed in your browser
+
+At no point does any data travel over a network connection to DevFlow's servers or any third party. The only network requests DevFlow makes are:
+
+- **Initial page load**: Downloading the HTML, CSS, and JavaScript that make up the application
+- **Google Fonts**: Loading the fonts used in the UI (this can be blocked with a browser extension if needed)
+
+## Verification
+
+You can verify this yourself:
+
+1. Open your browser's developer tools (F12 or right-click → Inspect)
+2. Go to the **Network** tab
+3. Clear the network log
+4. Use any DevFlow tool — paste input, get output
+5. Observe: **zero outbound requests** are made during tool operation
+
+## What We Do Not Do
+
+| Practice | DevFlow |
+|----------|---------|
+| Send your input to a server | Never |
+| Log your input | Never |
+| Store your input in a database | Never |
+| Share your data with third parties | Never |
+| Require account registration | Never |
+| Use cookies for tracking | Never |
+
+## Sensitive Data
+
+DevFlow is designed to be safe for sensitive developer data:
+
+- **JWT tokens**: Decoded entirely in the browser. Your token is never transmitted.
+- **API keys** (pasted by accident): Never leave your machine.
+- **PII in JSON payloads**: Processed and displayed locally only.
+- **Internal URLs**: Decoded/encoded without leaving your network.
+
+## Local Storage
+
+DevFlow does not use `localStorage` or `sessionStorage` to persist your input data between sessions. Each time you open a tool, it starts with a clean state.
+
+We may use `localStorage` for preferences such as:
+- Theme (light/dark mode)
+- Last-used tool (for command palette ordering)
+
+These preferences contain no sensitive data.
+
+## Compliance
+
+Because DevFlow does not collect, transmit, or store user data, it is inherently compatible with strict data handling requirements:
+
+- **GDPR**: No personal data is processed server-side
+- **HIPAA**: No PHI is transmitted or stored
+- **SOC 2**: No customer data leaves the customer's environment
+- **Internal security policies**: Safe to use with internal/confidential data
+
+> **Note**: We are not a legal advisor. If you have specific compliance requirements, consult your legal and security team. The architecture described here is accurate — everything is client-side — but compliance determinations are your organization's responsibility.
+
+## Open Source Verification
+
+DevFlow's tool logic is open-source. You can review the exact code that processes your input on [GitHub](https://github.com/Arslan6473/devflow). There are no hidden server calls.
+
+## Questions
+
+If you have questions about privacy or security, please [contact us](/contact).
