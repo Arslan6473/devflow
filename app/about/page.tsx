@@ -65,6 +65,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="mb-16">
         <SectionHeading
+          as="h1"
           eyebrow="About DevFlow"
           title="Fast, private developer tools — no compromises."
           subtitle="DevFlow exists because developer tools should not require you to send sensitive data to strangers on the internet."

@@ -15,6 +15,7 @@ export default function ContactPage() {
   return (
     <div className="container max-w-3xl mx-auto px-4 py-12 sm:py-16">
       <SectionHeading
+        as="h1"
         eyebrow="Contact"
         title="Get in Touch"
         subtitle="Questions, bug reports, feature requests, or just saying hi — we read every message."

@@ -43,7 +43,7 @@ export function ToolShell({ tool, children, className }: ToolShellProps) {
 
           <div className="flex-1 min-w-0">
             <div className="flex items-start justify-between gap-2">
-              <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
+              <h1 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl">
                 {tool.name}
               </h1>
               <FavoriteButton slug={tool.slug} className="shrink-0 mt-0.5" />

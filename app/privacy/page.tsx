@@ -17,6 +17,7 @@ export default function PrivacyPage() {
   return (
     <div className="container max-w-3xl mx-auto px-4 py-12 sm:py-16">
       <SectionHeading
+        as="h1"
         eyebrow="Legal"
         title="Privacy Policy"
         subtitle={`Last updated: ${lastUpdated}`}

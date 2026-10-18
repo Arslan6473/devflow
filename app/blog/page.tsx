@@ -28,6 +28,7 @@ export default function BlogPage() {
   return (
     <div className="container max-w-4xl mx-auto px-4 py-12 sm:py-16">
       <SectionHeading
+        as="h1"
         eyebrow="Blog"
         title="Insights & Updates"
         subtitle="Developer tools, privacy thinking, and what we're building at DevFlow."

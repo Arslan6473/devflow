@@ -18,6 +18,7 @@ export default function DocsPage() {
   return (
     <div className="container max-w-4xl mx-auto px-4 py-12 sm:py-16">
       <SectionHeading
+        as="h1"
         eyebrow="Documentation"
         title="DevFlow Docs"
         subtitle="Everything you need to get the most out of DevFlow's developer tools."

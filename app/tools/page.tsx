@@ -18,8 +18,9 @@ export default function ToolsPage() {
   );
 
   return (
-    <div className="container mx-auto max-w-screen-xl px-4 py-10 md:px-8">
+    <div className="container mx-auto max-w-screen-xl px-4 py-12 sm:py-16 md:px-8">
       <SectionHeading
+        as="h1"
         eyebrow="Tools"
         title="All Developer Tools"
         subtitle="Fast, private, client-side tools — nothing leaves your browser."
